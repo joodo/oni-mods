@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lianghanzhong/workplace/oni-mods/EnhancedCartographic/EnhancedCartographic.csproj": {}
+  },
+  "projects": {
+    "/Users/lianghanzhong/workplace/oni-mods/EnhancedCartographic/EnhancedCartographic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lianghanzhong/workplace/oni-mods/EnhancedCartographic/EnhancedCartographic.csproj",
+        "projectName": "EnhancedCartographic",
+        "projectPath": "/Users/lianghanzhong/workplace/oni-mods/EnhancedCartographic/EnhancedCartographic.csproj",
+        "packagesPath": "/Users/lianghanzhong/.nuget/packages/",
+        "outputPath": "/Users/lianghanzhong/workplace/oni-mods/EnhancedCartographic/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lianghanzhong/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
