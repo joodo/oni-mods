@@ -1,2 +1,6 @@
 # macOS
 .ds_store
+
+# C Sharp
+*/bin/**
+*/obj/

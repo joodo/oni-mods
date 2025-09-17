@@ -1,22 +1,20 @@
 using HarmonyLib;
+using UnityEngine;
+using System.Collections.Generic;
 
-namespace ONIMod
+[HarmonyPatch]
+public class AutoTelescopePatch
 {
-    public class Patches
+    [HarmonyPatch(typeof(ScannerModuleConfig), "ConfigureBuildingTemplate")]
+    public class ScannerModuleConfig_Patch
     {
-        [HarmonyPatch(typeof(Db))]
-        [HarmonyPatch("Initialize")]
-        public class Db_Initialize_Patch
+        public static void Postfix(GameObject go)
         {
-            public static void Prefix()
-            {
-                Debug.Log("I execute before Db.Initialize!");
-            }
-
-            public static void Postfix()
-            {
-                Debug.Log("I execute after Db.Initialize!");
-            }
+            // 给 ScannerModule 添加自动望远镜功能
+            go.AddOrGet<AutoTelescope>();
+            go.AddOrGetDef<ScannerModule.Def>().scanRadius = 2;
+            //AxialI position = go.GetMyWorldLocation();
+            //Debug.Log($"Rocket location: {position.q}, {position.r}");
         }
     }
 }
