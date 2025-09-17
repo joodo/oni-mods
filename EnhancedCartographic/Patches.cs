@@ -10,11 +10,7 @@ public class AutoTelescopePatch
     {
         public static void Postfix(GameObject go)
         {
-            // 给 ScannerModule 添加自动望远镜功能
-            go.AddOrGet<AutoTelescope>();
             go.AddOrGetDef<ScannerModule.Def>().scanRadius = 2;
-            //AxialI position = go.GetMyWorldLocation();
-            //Debug.Log($"Rocket location: {position.q}, {position.r}");
         }
     }
 }

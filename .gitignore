@@ -2,5 +2,5 @@
 .ds_store
 
 # C Sharp
-*/bin/**
+*/bin/
 */obj/
