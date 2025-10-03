@@ -1,15 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
-		<Configurations>Debug;Release</Configurations>
-		<AssemblyName>EnhancedCartographic</AssemblyName>
-		<RootNamespace>EnhancedCartographic</RootNamespace>
-		<IsMod>true</IsMod>
-		<GenerateMetadata>true</GenerateMetadata>
-		<IsPacked>true</IsPacked>
+    <Configurations>Debug;Release</Configurations>
+    <AssemblyName>EnhancedCartographic</AssemblyName>
+    <RootNamespace>EnhancedCartographic</RootNamespace>
+    <IsMod>true</IsMod>
+    <GenerateMetadata>true</GenerateMetadata>
+    <IsPacked>true</IsPacked>
   </PropertyGroup>
-
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\lib\0Harmony.dll</HintPath>

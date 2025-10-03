@@ -1,15 +1,21 @@
 using HarmonyLib;
 using UnityEngine;
 
-[HarmonyPatch]
-public class AutoTelescopePatch
+namespace EnhancedCartographic
 {
-    [HarmonyPatch(typeof(ScannerModuleConfig), "ConfigureBuildingTemplate")]
-    public class ScannerModuleConfig_Patch
+    [HarmonyPatch]
+    public class AutoTelescopePatch
     {
-        public static void Postfix(GameObject go)
+        [HarmonyPatch(
+            typeof(ScannerModuleConfig),
+            nameof(ScannerModuleConfig.ConfigureBuildingTemplate)
+        )]
+        public class PatchScannerModuleConfig
         {
-            go.AddOrGetDef<ScannerModule.Def>().scanRadius = 2;
+            public static void Postfix(GameObject go)
+            {
+                go.AddOrGetDef<ScannerModule.Def>().scanRadius = 2;
+            }
         }
     }
 }
