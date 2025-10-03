@@ -1,6 +1,5 @@
 using HarmonyLib;
 using UnityEngine;
-using System.Collections.Generic;
 
 [HarmonyPatch]
 public class AutoTelescopePatch
